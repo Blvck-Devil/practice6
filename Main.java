@@ -1,23 +1,21 @@
-import java.util.Scanner;
-public class Main { 
- public static void main(String[] args){ 
-   Scanner my=new Scanner(System.in);
-  int i,num=0,even=0,odd=0;
+import java.util.*;
+public class Main{
 
-   for(i=1;i<=5;i++){
-     System.out.println("Enter number:"+i);
-      num=my.nextInt();
- }
-   if(num%2==0){
-     even++;
-   }
-   else{
-     odd++;
-   }
-   
-     System.out.println("odd numbers:"+odd);
-   System.out.println("even numbers:"+even);
-   
- 
- } 
+     public static void main(String []args){
+         int r=1,w,ocount=0,ecount=0;
+         Scanner myScanner=new Scanner(System.in);
+         while(r<=6){
+             System.out.println("enter no"+r+":");
+             w=myScanner.nextInt();
+             
+             if (w%2==0)
+             {
+                 ecount++;
+             }else
+             ocount++;
+             r++;
+         }
+      System.out.println("Total odd numbers:"+ocount);
+      System.out.println("Total even numbers:"+ecount);
+     }
 }
